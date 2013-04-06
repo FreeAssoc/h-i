@@ -28,12 +28,12 @@
         }
 
         $('#new_hotel').submit(function(e) {
-          $.post('/api/hotels', $(this).serialize(), addHotel);
+          $.post('/hotels', $(this).serialize(), addHotel);
           this.reset();
           e.preventDefault();
         });
 
-        $.getJSON('/api/hotels', function(hotels) {
+        $.getJSON('/hotels', function(hotels) {
           $.each(hotels, function() { addHotel(this["hotel"]); });
         });
       });
