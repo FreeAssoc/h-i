@@ -13,6 +13,9 @@ group :test, :development do
   gem "rspec-rails", "~> 2.0"
 end
 
+# use Versionist for versioning our RESTful API.  http://goo.gl/Urd3z
+gem 'versionist'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
