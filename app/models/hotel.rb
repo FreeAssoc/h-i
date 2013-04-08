@@ -1,3 +1,9 @@
-class Hotel < ActiveRecord::Base
-  attr_accessible :name
+class Hotel
+  include Mongoid::Document
+  include Mongoid::Timestamps
+  include Mongoid::Slug
+  
+  field :name, type: String
+  slug :name
+  
 end

@@ -7,16 +7,6 @@ gem 'rails', '3.2.13'
 
 gem 'rails-api'
 
-gem 'sqlite3'
-
-group :test, :development do
-  gem "rspec-rails", "~> 2.0"
-end
-
-# use Versionist for versioning our RESTful API.  http://goo.gl/Urd3z
-gem 'versionist'
-
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -31,3 +21,21 @@ gem 'versionist'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+# RSpec for testing
+group :test, :development do
+  gem "rspec-rails", "~> 2.0"
+end
+
+# use Versionist for versioning our RESTful API.  http://goo.gl/Urd3z
+gem 'versionist'
+
+# Use Mongoid/ MongoDB for DB
+gem 'mongoid', '~>3.0.16'
+
+# Use mongoid-rspec to get mongoid matchers in RSpec http://goo.gl/S64IW
+gem 'mongoid-rspec'
+
+# Slugging for Mongoid documents
+gem 'mongoid_slug'
+

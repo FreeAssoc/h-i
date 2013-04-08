@@ -16,4 +16,4 @@
 # Using secret_token for rails3 compatibility. Change to secret_key_base
 # to avoid deprecation warning.
 # Can be safely removed in a rails3 api-only application.
-HotelinsiderApi::Application.config.secret_token = 'f19897d8f56b173fd3205238adfe1d60888fe10252c6a4d5082c4f83ed2f13e74c272007e1692c15f71fa35fe3f8a0fa202ab73bf0fe260e5ed49ffbbcda0963'
+HotelinsiderApi::Application.config.secret_token = '28ffd8014caf6f83b00500af7346a13cde83f68d4e0ffcf0fd48b153bbfe32d4182b0c10fee8671d64c1d74328f52c4a0f5582f50b9f5ca2c43acd3d63a62a9f'

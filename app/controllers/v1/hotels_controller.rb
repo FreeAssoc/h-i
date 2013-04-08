@@ -1,23 +1,22 @@
 class V1::HotelsController < V1::BaseController
-
-  # GET /api/hotels
-  # GET /api/hotels.json
+  # GET /hotels
+  # GET /hotels.json
   def index
     @hotels = Hotel.all
 
     render json: @hotels
   end
 
-  # GET /api/hotels/1
-  # GET /api/hotels/1.json
+  # GET /hotels/1
+  # GET /hotels/1.json
   def show
     @hotel = Hotel.find(params[:id])
 
     render json: @hotel
   end
 
-  # POST /api/hotels
-  # POST /api/hotels.json
+  # POST /hotels
+  # POST /hotels.json
   def create
     @hotel = Hotel.new(params[:hotel])
 
@@ -28,8 +27,8 @@ class V1::HotelsController < V1::BaseController
     end
   end
 
-  # PATCH/PUT /api/hotels/1
-  # PATCH/PUT /api/hotels/1.json
+  # PATCH/PUT /hotels/1
+  # PATCH/PUT /hotels/1.json
   def update
     @hotel = Hotel.find(params[:id])
 
@@ -40,13 +39,12 @@ class V1::HotelsController < V1::BaseController
     end
   end
 
-  # DELETE /api/hotels/1
-  # DELETE /api/hotels/1.json
+  # DELETE /hotels/1
+  # DELETE /hotels/1.json
   def destroy
     @hotel = Hotel.find(params[:id])
     @hotel.destroy
 
     head :no_content
   end
-
 end
