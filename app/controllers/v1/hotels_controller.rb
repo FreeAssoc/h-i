@@ -1,4 +1,5 @@
 class V1::HotelsController < V1::BaseController
+    
   # GET /hotels
   # GET /hotels.json
   def index

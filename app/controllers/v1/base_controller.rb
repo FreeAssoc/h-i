@@ -1,2 +1,3 @@
-class V1::BaseController < ActionController::API
+class V1::BaseController < ApplicationController
+
 end
