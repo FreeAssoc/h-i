@@ -103,3 +103,6 @@ nbproject
 test/README
 
 .idea/beta.iml
+
+log/*.log
+/log/development.log
