@@ -7,8 +7,9 @@ class Question
   field :help_text, type: String
   field :relative_value, type: Integer
   field :order, type: Integer
+  field :answer, type: String
+  field :additional_answer, type: String
 
-  has_one :question_type
   belongs_to :site
   belongs_to :category
 

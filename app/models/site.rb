@@ -6,6 +6,7 @@ class Site
   field :name, type: String
 
   has_many :questions
+  belongs_to :walkthrough
 
   slug :name
 end

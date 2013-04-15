@@ -24,6 +24,7 @@ class Hotel
   field :concierge_contact
 
   belongs_to :country
+  has_many :walkthroughs
 
   slug :name
 
