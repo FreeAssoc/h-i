@@ -8,6 +8,7 @@ class Hotel
   field :address2, type: String, localize: true
   field :address3, type: String, localize: true
   field :city, type: String, localize: true
+  field :state_province, type: String, localize: true
   field :postal_code, type: String, localize: true
   field :email, type: String
   field :homepage, type: String
@@ -15,16 +16,14 @@ class Hotel
   field :fax, type: String
   field :contact, type: String, localize: true
   field :image_url, type: String
-  field :location, :type => Array
+  field :location, :type => Array, default: [ 0.0, 0.0 ]
   field :additional_notes, type: String, localize: true
-  field :general_manager, type: ContactInfo
-  field :dir_sales_marketing, type: ContactInfo
-  field :reservation_contact, type: ContactInfo
-  field :concierge_contact, type: ContactInfo
+  field :general_manager
+  field :dir_sales_marketing
+  field :reservation_contact
+  field :concierge_contact
 
-
-  has_one :region
-  has_one :country
+  belongs_to :country
 
   slug :name
 
