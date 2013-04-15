@@ -9,6 +9,8 @@ class Question
   field :order, type: Integer
 
   has_one :question_type
+  belongs_to :site
+  belongs_to :category
 
   slug :text
 end
