@@ -7,7 +7,7 @@ class Country
   field :iso_code, type: String
 
   has_many :hotels
-  belongs_to :geographical_region
+  belongs_to :region
 
   slug :name
 end

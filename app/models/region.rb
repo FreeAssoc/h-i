@@ -6,7 +6,7 @@ class Region
 
   field :name, type: String, localize: true
 
-  has_many :countries, class_name: "Country"
+  has_many :countries
 
   slug :name
 end
