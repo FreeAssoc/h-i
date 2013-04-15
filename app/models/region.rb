@@ -1,5 +1,5 @@
 # based on UN Country Grouping http://goo.gl/kB7Bt
-class GeographicalRegion
+class Region
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::Slug
