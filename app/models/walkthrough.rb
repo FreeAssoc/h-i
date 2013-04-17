@@ -7,6 +7,6 @@ class Walkthrough
 
   belongs_to:user
   belongs_to :hotel
-  has_many :sites
+  embeds_many :sites
 
 end
