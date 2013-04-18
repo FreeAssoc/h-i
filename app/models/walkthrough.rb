@@ -6,7 +6,7 @@ class Walkthrough
   field :statistics
 
   belongs_to:user
-  belongs_to :hotel
+  embedded_in :hotel
   embeds_many :sites
 
 end

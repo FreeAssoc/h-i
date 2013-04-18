@@ -5,9 +5,10 @@ class Country
 
   field :name, type: String, localize: true
   field :iso_code, type: String
+  field :currency, type: String, localize: true
 
-  has_many :hotels
-  belongs_to :region
+  has_one :region
+  embedded_in :hotel
 
   slug :name
 end

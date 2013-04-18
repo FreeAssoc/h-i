@@ -1,13 +1,12 @@
-# based on UN Country Grouping http://goo.gl/kB7Bt
-class Region
+class Room
   include Mongoid::Document
   include Mongoid::Timestamps
-  include Mongoid::Slug
 
   field :name, type: String, localize: true
+  field :description, type: String, localize: true
+  field :image_urls, :type => Array
+  field :rates
 
-  has_many :countries
   embedded_in :hotel
 
-  slug :name
 end

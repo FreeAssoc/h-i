@@ -14,17 +14,19 @@ class Hotel
   field :homepage, type: String
   field :phone, type: String
   field :fax, type: String
-  field :contact, type: String, localize: true
-  field :image_url, type: String
+  field :contact_name, type: String, localize: true
   field :location, :type => Array, default: [ 0.0, 0.0 ]
-  field :additional_notes, type: String, localize: true
+  field :description, type: String, localize: true
   field :general_manager
-  field :dir_sales_marketing
-  field :reservation_contact
-  field :concierge_contact
+  field :contacts
+  field :primary_image_url, type: String
+  field :image_urls, :type => Array
+  field :cancellation_policy, type: String
+  field :booking_conditions, type: String
 
-  belongs_to :country
-  has_many :walkthroughs
+  embeds_many :walkthroughs
+  embeds_many :rooms
+  embeds_one :country
 
   slug :name
 
