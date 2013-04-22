@@ -4,14 +4,14 @@ class V1::HotelsController < V1::BaseController
   # GET /hotels.json
   def index
     @hotels = Hotel.all
-
     render json: @hotels
+    # render Hotel.all.as_json(:include => "country")
   end
 
   # GET /hotels/1
   # GET /hotels/1.json
   def show
-    @hotel = Hotel.find(params[:id])
+    @hotel = Hotel.includes(:country).find(params[:id])
 
     render json: @hotel
   end

@@ -7,7 +7,6 @@ class Region
   field :name, type: String, localize: true
 
   has_many :countries
-  embedded_in :hotel
 
   slug :name
 end

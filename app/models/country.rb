@@ -7,8 +7,8 @@ class Country
   field :iso_code, type: String
   field :currency, type: String, localize: true
 
-  has_one :region
-  embedded_in :hotel
+  belongs_to :region
+  has_many :hotels
 
   slug :name
 end
