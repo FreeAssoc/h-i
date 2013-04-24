@@ -16,7 +16,7 @@ class Hotel
   field :primary_email, type: String
   field :homepage, type: String
   field :primary_phone, type: String
-  field :primary_fax, type: String
+  field :fax, type: String
   field :location, :type => Array, default: [ 0.0, 0.0 ]
   field :description, type: String, localize: true
   field :contacts
@@ -27,7 +27,7 @@ class Hotel
 
   has_many :walkthrough
   embeds_many :rooms
-  belongs_to :country
+  belongs_to :country, index: true
 
   slug :name
 
