@@ -10,8 +10,6 @@ class Hotel
   field :address4, :type => String, localize: true
   field :city, type: String, localize: true
   field :state_province, type: String, localize: true
-  field :country_iso_code, type: String
-  field :region_name, type: String
   field :postal_code, type: String, localize: true
   field :primary_email, type: String
   field :homepage, type: String

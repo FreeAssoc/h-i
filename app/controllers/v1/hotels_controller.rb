@@ -3,17 +3,27 @@ class V1::HotelsController < V1::BaseController
   # GET /hotels
   # GET /hotels.json
   def index
-    @hotels = Hotel.all
-    render json: @hotels
-    # render Hotel.all.as_json(:include => "country")
+    @hotels = Hotel.includes(:country).all
+     render :json => @hotels.to_json(:include =>
+                                      { :country =>
+                                        { :include =>
+                                          { :region => {} }
+                                        }
+                                      }
+                                   )
   end
 
   # GET /hotels/1
   # GET /hotels/1.json
   def show
     @hotel = Hotel.includes(:country).find(params[:id])
-
-    render json: @hotel
+     render :json => @hotel.to_json(:include =>
+                                      { :country =>
+                                        { :include =>
+                                          { :region => {} }
+                                        }
+                                      }
+                                   )
   end
 
   # POST /hotels
