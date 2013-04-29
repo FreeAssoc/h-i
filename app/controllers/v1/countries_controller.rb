@@ -11,7 +11,7 @@ class V1::CountriesController < V1::BaseController
   # GET /countries/1
   # GET /countries/1.json
   def show
-    @hotel = Country.includes(:country).find(params[:id])
+    @hotel = Country.find(params[:id])
 
     render json: @hotel
   end

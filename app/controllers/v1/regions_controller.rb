@@ -11,7 +11,7 @@ class V1::RegionsController < V1::BaseController
   # GET /regions/1
   # GET /regions/1.json
   def show
-    @region = Region.includes(:country).find(params[:id])
+    @region = Region.includes(:countries).find(params[:id])
 
     render json: @region
   end
