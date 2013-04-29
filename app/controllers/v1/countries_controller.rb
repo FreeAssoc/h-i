@@ -3,17 +3,16 @@ class V1::CountriesController < V1::BaseController
   # GET /countries
   # GET /countries.json
   def index
-    @countries = Country.all
-    render json: @countries
+    @countries = Country.includes(:hotels).all
+    render :json => @countries.to_json(:include => { :hotels => {} })
     # render Country.all.as_json(:include => "country")
   end
 
   # GET /countries/1
   # GET /countries/1.json
   def show
-    @hotel = Country.find(params[:id])
-
-    render json: @hotel
+    @country = Country.find(params[:id])
+    render :json => @country.to_json(:include => { :hotels => {} })
   end
 
   # POST /countries

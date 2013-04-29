@@ -3,8 +3,8 @@ class V1::RegionsController < V1::BaseController
   # GET /regions
   # GET /regions.json
   def index
-    @regions = Region.all
-    render json: @regions
+    @regions = Region.includes(:countries).all
+    render :json => @regions.to_json(:include => { :countries => {} })
     # render region.all.as_json(:include => "country")
   end
 
@@ -12,8 +12,7 @@ class V1::RegionsController < V1::BaseController
   # GET /regions/1.json
   def show
     @region = Region.includes(:countries).find(params[:id])
-
-    render json: @region
+    render :json => @region.to_json(:include => { :countries => {} })
   end
 
   # POST /regions
