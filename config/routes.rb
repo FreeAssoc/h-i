@@ -8,7 +8,8 @@ HotelinsiderApi::Application.routes.draw do
     resources :questions, except: [:new, :edit]
     resources :walkthroughs, except: [:new, :edit]
     resources :sites, except: [:new, :edit]
-
+    resources :countries, except: [:new, :edit]
+    resources :regions, except: [:new, :edit]
   end
 
 end
