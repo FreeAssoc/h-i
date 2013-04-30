@@ -1,10 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+#!/bin/env ruby
+# encoding: utf-8
 Walkthrough.destroy_all
 Hotel.destroy_all
 Country.destroy_all
@@ -44,8 +39,6 @@ Country.create( { name: "United Arab Emirates", iso_code: "CN", currency: "AED",
 hotel = Hotel.new
 hotel.name = "Berns Hotel"
 hotel.address1 = "Näckströmsgatan 8"
-hotel.country_iso_code = "SE"
-hotel.region_name = "Europe"
 hotel.postal_code = "111 47"
 hotel.primary_email = "frontoffice@berns.se"
 hotel.homepage = "http://www.berns.se/"
@@ -79,8 +72,6 @@ hotel = Hotel.new
 hotel.name = "GRAND HOTEL DU CAP FERRAT"
 hotel.address1 = "71 Boulevard du Général de Gaulle"
 hotel.city = "Saint-Jean-Cap-Ferrat"
-hotel.country_iso_code = "FR"
-hotel.region_name = "Europe"
 hotel.postal_code = "06230"
 hotel.homepage = "http://www.grand-hotel-cap-ferrat.com/uk/index.php"
 hotel.location = [ 43.6778978, 7.3319548 ]
@@ -111,8 +102,6 @@ hotel = Hotel.new
 hotel.name = "Grand Hotel Stockholm"
 hotel.address1 = "Södra Blasieholmshamnen 8"
 hotel.city = "Stockholm"
-hotel.country_iso_code = "SE"
-hotel.region_name = "Europe"
 hotel.homepage = "http://www.grandhotel.se/en"
 hotel.location = [ 59.32954700000001, 18.0753843 ]
 hotel.primary_image_url = "http://hotelinsider.secure.exhost.se/uploads/hotel/Grand_hotel_Stockholm_2008-07-17.jpg"
@@ -142,8 +131,6 @@ hotel = Hotel.new
 hotel.name = "Grand Hyatt Hotel Dubai"
 hotel.address1 = "Sheikh Rashid Rd "
 hotel.city = "Dubai"
-hotel.country_iso_code = "UAE"
-hotel.region_name = "Middle East"
 hotel.primary_email = "dubai.grand@hyatt.com"
 hotel.primary_phone = "+971 4 317 1234"
 hotel.homepage = "http://www.dubai.grand.hyatt.com/"
@@ -175,8 +162,6 @@ hotel = Hotel.new
 hotel.name = "Hilton Stockholm"
 hotel.address1 = "Guldgränd 8"
 hotel.city = "Stockholm"
-hotel.country_iso_code = "SE"
-hotel.region_name = "Europe"
 hotel.location = [ 59.3204506, 18.0692649 ]
 hotel.primary_image_url = "http://hotelinsider.secure.exhost.se/uploads/hotel/Hilton_Stockholm_Slussen_530.jpg"
 hotel.country = Country.where(name: "Sweden").first
@@ -205,8 +190,6 @@ hotel = Hotel.new
 hotel.name = "Hotel Diplomat"
 hotel.address1 = "Strandvägen 7C"
 hotel.city = "Stockholm"
-hotel.country_iso_code = "SE"
-hotel.region_name = "Europe"
 hotel.location = [ 59.3319047,18.0806326 ]
 hotel.primary_image_url = "http://hotelinsider.secure.exhost.se/uploads/hotel/hotel-diplomat-stockholm-2.jpg"
 hotel.country = Country.where(name: "Sweden").first
@@ -235,8 +218,6 @@ hotel = Hotel.new
 hotel.name = "Lydmar"
 hotel.address1 = "Södra Blasieholmshamnen 2"
 hotel.city = "Stockholm"
-hotel.country_iso_code = "SE"
-hotel.region_name = "Europe"
 hotel.location = [ 59.3284865, 18.0780943 ]
 hotel.primary_image_url = "http://hotelinsider.secure.exhost.se/uploads/hotel/Lydmar-000441-1.jpg"
 hotel.country = Country.where(name: "Sweden").first
@@ -267,8 +248,6 @@ hotel.name = "MGM Grand Hotel & Casino"
 hotel.address1 = "3799 South Las Vegas Boulevard"
 hotel.city = "Las Vegas"
 hotel.state_province = "NV"
-hotel.country_iso_code = "US"
-hotel.region_name = "North America"
 hotel.homepage = "http://www.mgmgrand.com"
 hotel.primary_phone = "877-880-0880"
 hotel.location = [ 36.1030179, -115.1676888 ]
@@ -299,8 +278,6 @@ hotel = Hotel.new
 hotel.name = "Nobis Hotel"
 hotel.address1 = "Norrmalmstorg 2-4"
 hotel.city = "Stockholm"
-hotel.country_iso_code = "SE"
-hotel.region_name = "Europe"
 hotel.location = [ 59.3331622, 18.0738095 ]
 hotel.primary_image_url = "http://hotelinsider.secure.exhost.se/uploads/hotel/Nobis-Hotel-Stockholm.jpg"
 hotel.country = Country.where(name: "Sweden").first
@@ -330,21 +307,15 @@ hotel.name = "Upper House"
 hotel.address1 = "Pacific Place"
 hotel.address2 = "88 Queensway"
 hotel.city = "Hong Kong"
-hotel.country_iso_code = "CN"
-hotel.region_name = "Asia"
 hotel.location = [ 22.277722, 114.16481 ]
 hotel.primary_image_url = "http://hotelinsider.secure.exhost.se/uploads/hotel/the-upper-house-hong-kong-1.jpg"
 hotel.country = Country.where(name: "Hong Kong").first
-
-# contacts for this hotel
 hotel.contacts = [
                    { :title => "General Manager" },
                    { :title => "Director of Sales and Marketing" },
                    { :title => "Reservation" },
                    { :title => "Concierge" }
                  ]
-
-# rooms for this hotel
 rooms = []
 room = Room.new
 room.name = "Superior Double Room"
@@ -356,8 +327,5 @@ room.name = "Single Room"
 room.description = "15 sqm with a work desk"
 room.rates = { "Visa Premium Card Rate" => 100, "Summer weekend rate" => 200, "Group rate" => 75 }
 rooms << room
-
 hotel.rooms = rooms
-
 hotel.save
-
