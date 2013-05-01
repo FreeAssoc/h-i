@@ -1,34 +1,26 @@
 require "spec_helper"
 
-describe CategoriesController do
+describe V1::CategoriesController do
   describe "routing" do
 
     it "routes to #index" do
-      get("/categories").should route_to("categories#index")
-    end
-
-    it "routes to #new" do
-      get("/categories/new").should route_to("categories#new")
+      get("/categories").should route_to("v1/categories#index", :format => 'json')
     end
 
     it "routes to #show" do
-      get("/categories/1").should route_to("categories#show", :id => "1")
-    end
-
-    it "routes to #edit" do
-      get("/categories/1/edit").should route_to("categories#edit", :id => "1")
+      get("/categories/1").should route_to("v1/categories#show", :id => "1", :format => 'json')
     end
 
     it "routes to #create" do
-      post("/categories").should route_to("categories#create")
+      post("/categories").should route_to("v1/categories#create", :format => 'json')
     end
 
     it "routes to #update" do
-      put("/categories/1").should route_to("categories#update", :id => "1")
+      put("/categories/1").should route_to("v1/categories#update", :id => "1", :format => 'json')
     end
 
     it "routes to #destroy" do
-      delete("/categories/1").should route_to("categories#destroy", :id => "1")
+      delete("/categories/1").should route_to("v1/categories#destroy", :id => "1", :format => 'json')
     end
 
   end

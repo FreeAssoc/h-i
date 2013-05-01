@@ -1,34 +1,26 @@
 require "spec_helper"
 
-describe WalkthroughsController do
+describe V1::WalkthroughsController do
   describe "routing" do
 
     it "routes to #index" do
-      get("/walkthroughs").should route_to("walkthroughs#index")
-    end
-
-    it "routes to #new" do
-      get("/walkthroughs/new").should route_to("walkthroughs#new")
+      get("/walkthroughs").should route_to("v1/walkthroughs#index", :format => 'json')
     end
 
     it "routes to #show" do
-      get("/walkthroughs/1").should route_to("walkthroughs#show", :id => "1")
-    end
-
-    it "routes to #edit" do
-      get("/walkthroughs/1/edit").should route_to("walkthroughs#edit", :id => "1")
+      get("/walkthroughs/1").should route_to("v1/walkthroughs#show", :id => "1", :format => 'json')
     end
 
     it "routes to #create" do
-      post("/walkthroughs").should route_to("walkthroughs#create")
+      post("/walkthroughs").should route_to("v1/walkthroughs#create", :format => 'json')
     end
 
     it "routes to #update" do
-      put("/walkthroughs/1").should route_to("walkthroughs#update", :id => "1")
+      put("/walkthroughs/1").should route_to("v1/walkthroughs#update", :id => "1", :format => 'json')
     end
 
     it "routes to #destroy" do
-      delete("/walkthroughs/1").should route_to("walkthroughs#destroy", :id => "1")
+      delete("/walkthroughs/1").should route_to("v1/walkthroughs#destroy", :id => "1", :format => 'json')
     end
 
   end
