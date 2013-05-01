@@ -2,7 +2,9 @@ HotelinsiderApi::Application.routes.draw do
 
   api_version(:module => "V1", :parameter => {:name => "version", :value => "1"}, :defaults => {:format => "json"}, :default => true) do
 
-    resources :hotels, except: [:new, :edit]
+    resources :hotels, except: [:new, :edit] do
+      resources :rooms, except: [:new, :edit]
+    end
     resources :categories, except: [:new, :edit]
     resources :question_types, except: [:new, :edit]
     resources :questions, except: [:new, :edit]
