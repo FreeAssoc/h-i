@@ -24,9 +24,10 @@ class V1::RoomsController < V1::BaseController
   # PATCH/PUT /rooms/1
   # PATCH/PUT /rooms/1.json
   def update
-    @room = Hotel.find(params[:id])
+    @hotel = Hotel.find(params[:hotel_id)
+    @room = @hotel.rooms.find(params[:id])
 
-    if @room.update_attributes(params[:hotel])
+    if @room.update_attributes(params[:room])
       head :no_content
     else
       render json: @room.errors, status: :unprocessable_entity
@@ -50,7 +51,12 @@ class V1::RoomsController < V1::BaseController
      if !@hotel
        redirect_to root_path
      end
-     @rooms = @hotel.rooms
+     
+     if !@hotel.rooms
+       @rooms = []
+     else
+       @rooms = @hotel.rooms
+     end
   end
 
 end
