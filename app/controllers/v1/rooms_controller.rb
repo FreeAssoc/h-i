@@ -13,9 +13,11 @@ class V1::RoomsController < V1::BaseController
 
   def create
     @room = Room.new(params[:room])
+    hotel = Hotel.find(params[:room][:hotel_id])
+    @room.hotel = hotel
 
     if @room.save
-      render json: @room, status: :created, location: @room
+      render json: @room, status: :created
     else
       render json: @room.errors, status: :unprocessable_entity
     end
@@ -24,7 +26,6 @@ class V1::RoomsController < V1::BaseController
   # PATCH/PUT /rooms/1
   # PATCH/PUT /rooms/1.json
   def update
-    @hotel = Hotel.find(params[:hotel_id)
     @room = @hotel.rooms.find(params[:id])
 
     if @room.update_attributes(params[:room])
@@ -37,7 +38,7 @@ class V1::RoomsController < V1::BaseController
   # DELETE /rooms/1
   # DELETE /rooms/1.json
   def destroy
-    @room = Hotel.find(params[:id])
+    @room = Room.find(params[:id])
     @room.destroy
 
     head :no_content
