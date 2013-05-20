@@ -1,0 +1,766 @@
+[{
+    "_id": "5191297582a615969c00000f",
+    "_slugs": ["berns-hotel"],
+    "address1": "Näckströmsgatan 8",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": null,
+    "contacts": [{
+        "name": "Hans-Göran Göransson-Hansson",
+        "email": "goran@berns.se"
+    }, {
+        "title": "General Manager",
+        "name": "Göran",
+        "email": "goran@berns.se",
+        "phone1": "123456789",
+        "phone2": "123456789"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000a",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": "08-112",
+    "homepage": "http://www.berns.se/",
+    "image_urls": null,
+    "location": [59.33249, 18.07341],
+    "name": "Berns Hotel",
+    "postal_code": "111 47",
+    "primary_email": "frontoffice@berns.se",
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/berns_hotel_exterior_stockholm_sweden.jpg",
+    "primary_phone": "+46 (0)8 566 322 50",
+    "rooms": [{
+        "_id": "5191297582a615969c000010",
+        "created_at": null,
+        "description": "Standard king. King bed. 250 sqft. Floor to ceiling windows with stunning views",
+        "image_urls": null,
+        "name": "DELUXE KING ADA",
+        "rates": {
+            "Visa Premium Card Rate": 417,
+            "Flexible rate": 475,
+            "Flexible rate + breakfast": 510
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c000011",
+        "created_at": null,
+        "description": "Standard king. King bed. 250 sqft.",
+        "image_urls": null,
+        "name": "DELUXE KING",
+        "rates": {
+            "Visa Premium Card Rate": 400,
+            "Flexible rate": 450,
+            "Flexible rate + breakfast": 475
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000a",
+        "_slugs": ["sweden"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "SEK",
+        "iso_code": "SE",
+        "name": "Sweden",
+        "region_id": "5191297582a615969c000004",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000004",
+            "_slugs": ["europe"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Europe",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}, {
+    "_id": "5191297582a615969c000012",
+    "_slugs": ["grand-hotel-du-cap-ferrat"],
+    "address1": "71 Boulevard du Général de Gaulle",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": "Saint-Jean-Cap-Ferrat",
+    "contacts": [{
+        "title": "General Manager",
+        "name": "Henri Poincaire",
+        "email": "henri@grandhotelferrat.co.fr",
+        "phone1": "123456789",
+        "phone2": "123456789"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000b",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": null,
+    "homepage": "http://www.grand-hotel-cap-ferrat.com/uk/index.php",
+    "image_urls": null,
+    "location": [43.6778978, 7.3319548],
+    "name": "GRAND HOTEL DU CAP FERRAT",
+    "postal_code": "06230",
+    "primary_email": null,
+    "primary_image_url": "http://www.grand-hotel-cap-ferrat.com/maj/images_resized/2488-so-2012galeriephotos-photohotel1-fr2.jpg",
+    "primary_phone": null,
+    "rooms": [{
+        "_id": "5191297582a615969c000013",
+        "created_at": null,
+        "description": "Standard king. King bed. 30 m. Marble statuary with view of Mediterranean",
+        "image_urls": null,
+        "name": "Suite Deluxe",
+        "rates": {
+            "Visa Premium Card Rate": 384,
+            "Standard rate": 410,
+            "Standard en-suite": 440
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c000014",
+        "created_at": null,
+        "description": "Standard king. King bed. 20 m. Fountain, faces courtyard. ",
+        "image_urls": null,
+        "name": "Suite Anniversaire",
+        "rates": {
+            "Visa Premium Card Rate": 500,
+            "Summer weekend rate": 750,
+            "Group rate": 475
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000b",
+        "_slugs": ["france"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "EUR",
+        "iso_code": "FR",
+        "name": "France",
+        "region_id": "5191297582a615969c000004",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000004",
+            "_slugs": ["europe"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Europe",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}, {
+    "_id": "5191297582a615969c000015",
+    "_slugs": ["grand-hotel-stockholm"],
+    "address1": "Södra Blasieholmshamnen 8",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": "Stockholm",
+    "contacts": [{
+        "title": "General Manager",
+        "name": "Marcus Zetterquist",
+        "email": "marcus@grandhotel.se",
+        "phone1": "123456789",
+        "phone2": "123456789"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000a",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": null,
+    "homepage": "http://www.grandhotel.se/en",
+    "image_urls": null,
+    "location": [59.32954700000001, 18.0753843],
+    "name": "Grand Hotel Stockholm",
+    "postal_code": null,
+    "primary_email": null,
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/Grand_hotel_Stockholm_2008-07-17.jpg",
+    "primary_phone": null,
+    "rooms": [{
+        "_id": "5191297582a615969c000016",
+        "created_at": null,
+        "description": "25 sqm with desk and seating area",
+        "image_urls": null,
+        "name": "Superior Double Room",
+        "rates": {
+            "Visa Premium Card Rate": 250,
+            "Standard rate": 150,
+            "Summer weekend": 340
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c000017",
+        "created_at": null,
+        "description": "15 sqm with a work desk",
+        "image_urls": null,
+        "name": "Single Room",
+        "rates": {
+            "Visa Premium Card Rate": 100,
+            "Summer weekend rate": 200,
+            "Group rate": 75
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000a",
+        "_slugs": ["sweden"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "SEK",
+        "iso_code": "SE",
+        "name": "Sweden",
+        "region_id": "5191297582a615969c000004",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000004",
+            "_slugs": ["europe"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Europe",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}, {
+    "_id": "5191297582a615969c000018",
+    "_slugs": ["grand-hyatt-hotel-dubai"],
+    "address1": "Sheikh Rashid Rd ",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": "Dubai",
+    "contacts": [{
+        "title": "General Manager"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000e",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": null,
+    "homepage": "http://www.dubai.grand.hyatt.com/",
+    "image_urls": null,
+    "location": [25.2472188, 55.3372125],
+    "name": "Grand Hyatt Hotel Dubai",
+    "postal_code": null,
+    "primary_email": "dubai.grand@hyatt.com",
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/grand-hyatt-dubai_ph_alb_270120114138.jpg",
+    "primary_phone": "+971 4 317 1234",
+    "rooms": [{
+        "_id": "5191297582a615969c000019",
+        "created_at": null,
+        "description": "25 sqm with desk and seating area",
+        "image_urls": null,
+        "name": "Superior Double Room",
+        "rates": {
+            "Visa Premium Card Rate": 250,
+            "Standard rate": 150,
+            "Summer weekend": 340
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c00001a",
+        "created_at": null,
+        "description": "15 sqm with a work desk",
+        "image_urls": null,
+        "name": "Single Room",
+        "rates": {
+            "Visa Premium Card Rate": 100,
+            "Summer weekend rate": 200,
+            "Group rate": 75
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000e",
+        "_slugs": ["united-arab-emirates"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "AED",
+        "iso_code": "CN",
+        "name": "United Arab Emirates",
+        "region_id": "5191297582a615969c000005",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000005",
+            "_slugs": ["middle-east"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Middle East",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}, {
+    "_id": "5191297582a615969c00001b",
+    "_slugs": ["hilton-stockholm"],
+    "address1": "Guldgränd 8",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": "Stockholm",
+    "contacts": [{
+        "title": "General Manager"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000a",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": null,
+    "homepage": null,
+    "image_urls": null,
+    "location": [59.3204506, 18.0692649],
+    "name": "Hilton Stockholm",
+    "postal_code": null,
+    "primary_email": null,
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/Hilton_Stockholm_Slussen_530.jpg",
+    "primary_phone": null,
+    "rooms": [{
+        "_id": "5191297582a615969c00001c",
+        "created_at": null,
+        "description": "25 sqm with desk and seating area",
+        "image_urls": null,
+        "name": "Superior Double Room",
+        "rates": {
+            "Visa Premium Card Rate": 250,
+            "Standard rate": 150,
+            "Summer weekend": 340
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c00001d",
+        "created_at": null,
+        "description": "15 sqm with a work desk",
+        "image_urls": null,
+        "name": "Single Room",
+        "rates": {
+            "Visa Premium Card Rate": 100,
+            "Summer weekend rate": 200,
+            "Group rate": 75
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000a",
+        "_slugs": ["sweden"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "SEK",
+        "iso_code": "SE",
+        "name": "Sweden",
+        "region_id": "5191297582a615969c000004",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000004",
+            "_slugs": ["europe"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Europe",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}, {
+    "_id": "5191297582a615969c00001e",
+    "_slugs": ["hotel-diplomat"],
+    "address1": "Strandvägen 7C",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": "Stockholm",
+    "contacts": [{
+        "title": "General Manager"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000a",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": null,
+    "homepage": null,
+    "image_urls": null,
+    "location": [59.3319047, 18.0806326],
+    "name": "Hotel Diplomat",
+    "postal_code": null,
+    "primary_email": null,
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/hotel-diplomat-stockholm-2.jpg",
+    "primary_phone": null,
+    "rooms": [{
+        "_id": "5191297582a615969c00001f",
+        "created_at": null,
+        "description": "25 sqm with desk and seating area",
+        "image_urls": null,
+        "name": "Superior Double Room",
+        "rates": {
+            "Visa Premium Card Rate": 250,
+            "Standard rate": 150,
+            "Summer weekend": 340
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c000020",
+        "created_at": null,
+        "description": "15 sqm with a work desk",
+        "image_urls": null,
+        "name": "Single Room",
+        "rates": {
+            "Visa Premium Card Rate": 100,
+            "Summer weekend rate": 200,
+            "Group rate": 75
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000a",
+        "_slugs": ["sweden"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "SEK",
+        "iso_code": "SE",
+        "name": "Sweden",
+        "region_id": "5191297582a615969c000004",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000004",
+            "_slugs": ["europe"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Europe",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}, {
+    "_id": "5191297582a615969c000021",
+    "_slugs": ["lydmar"],
+    "address1": "Södra Blasieholmshamnen 2",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": "Stockholm",
+    "contacts": [{
+        "title": "General Manager"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000a",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": null,
+    "homepage": null,
+    "image_urls": null,
+    "location": [59.3284865, 18.0780943],
+    "name": "Lydmar",
+    "postal_code": null,
+    "primary_email": null,
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/Lydmar-000441-1.jpg",
+    "primary_phone": null,
+    "rooms": [{
+        "_id": "5191297582a615969c000022",
+        "created_at": null,
+        "description": "25 sqm with desk and seating area",
+        "image_urls": null,
+        "name": "Superior Double Room",
+        "rates": {
+            "Visa Premium Card Rate": 250,
+            "Standard rate": 150,
+            "Summer weekend": 340
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c000023",
+        "created_at": null,
+        "description": "15 sqm with a work desk",
+        "image_urls": null,
+        "name": "Single Room",
+        "rates": {
+            "Visa Premium Card Rate": 100,
+            "Summer weekend rate": 200,
+            "Group rate": 75
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000a",
+        "_slugs": ["sweden"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "SEK",
+        "iso_code": "SE",
+        "name": "Sweden",
+        "region_id": "5191297582a615969c000004",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000004",
+            "_slugs": ["europe"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Europe",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}, {
+    "_id": "5191297582a615969c000024",
+    "_slugs": ["mgm-grand-hotel-and-casino"],
+    "address1": "3799 South Las Vegas Boulevard",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": "Las Vegas",
+    "contacts": [{
+        "title": "General Manager"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000c",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": null,
+    "homepage": "http://www.mgmgrand.com",
+    "image_urls": null,
+    "location": [36.1030179, -115.1676888],
+    "name": "MGM Grand Hotel & Casino",
+    "postal_code": null,
+    "primary_email": null,
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/Mgm-Grand-Las-Vegas.jpg",
+    "primary_phone": "877-880-0880",
+    "rooms": [{
+        "_id": "5191297582a615969c000025",
+        "created_at": null,
+        "description": "25 sqm with desk and seating area",
+        "image_urls": null,
+        "name": "Superior Double Room",
+        "rates": {
+            "Visa Premium Card Rate": 250,
+            "Standard rate": 150,
+            "Summer weekend": 340
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c000026",
+        "created_at": null,
+        "description": "15 sqm with a work desk",
+        "image_urls": null,
+        "name": "Single Room",
+        "rates": {
+            "Visa Premium Card Rate": 100,
+            "Summer weekend rate": 200,
+            "Group rate": 75
+        },
+        "updated_at": null
+    }],
+    "state_province": "NV",
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000c",
+        "_slugs": ["united-states"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "USD",
+        "iso_code": "US",
+        "name": "United States",
+        "region_id": "5191297582a615969c000006",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000006",
+            "_slugs": ["north-america"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "North America",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}, {
+    "_id": "5191297582a615969c000027",
+    "_slugs": ["nobis-hotel"],
+    "address1": "Norrmalmstorg 2-4",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": "Stockholm",
+    "contacts": [{
+        "title": "General Manager"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000a",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": null,
+    "homepage": null,
+    "image_urls": null,
+    "location": [59.3331622, 18.0738095],
+    "name": "Nobis Hotel",
+    "postal_code": null,
+    "primary_email": null,
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/Nobis-Hotel-Stockholm.jpg",
+    "primary_phone": null,
+    "rooms": [{
+        "_id": "5191297582a615969c000028",
+        "created_at": null,
+        "description": "25 sqm with desk and seating area",
+        "image_urls": null,
+        "name": "Superior Double Room",
+        "rates": {
+            "Visa Premium Card Rate": 250,
+            "Standard rate": 150,
+            "Summer weekend": 340
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c000029",
+        "created_at": null,
+        "description": "15 sqm with a work desk",
+        "image_urls": null,
+        "name": "Single Room",
+        "rates": {
+            "Visa Premium Card Rate": 100,
+            "Summer weekend rate": 200,
+            "Group rate": 75
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000a",
+        "_slugs": ["sweden"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "SEK",
+        "iso_code": "SE",
+        "name": "Sweden",
+        "region_id": "5191297582a615969c000004",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000004",
+            "_slugs": ["europe"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Europe",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}, {
+    "_id": "5191297582a615969c00002a",
+    "_slugs": ["upper-house"],
+    "address1": "Pacific Place",
+    "address2": "88 Queensway",
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": "Hong Kong",
+    "contacts": [{
+        "title": "General Manager"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000d",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": null,
+    "homepage": null,
+    "image_urls": null,
+    "location": [22.277722, 114.16481],
+    "name": "Upper House",
+    "postal_code": null,
+    "primary_email": null,
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/the-upper-house-hong-kong-1.jpg",
+    "primary_phone": null,
+    "rooms": [{
+        "_id": "5191297582a615969c00002b",
+        "created_at": null,
+        "description": "25 sqm with desk and seating area",
+        "image_urls": null,
+        "name": "Superior Double Room",
+        "rates": {
+            "Visa Premium Card Rate": 250,
+            "Standard rate": 150,
+            "Summer weekend": 340
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c00002c",
+        "created_at": null,
+        "description": "15 sqm with a work desk",
+        "image_urls": null,
+        "name": "Single Room",
+        "rates": {
+            "Visa Premium Card Rate": 100,
+            "Summer weekend rate": 200,
+            "Group rate": 75
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000d",
+        "_slugs": ["hong-kong"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "HKD",
+        "iso_code": "CN",
+        "name": "Hong Kong",
+        "region_id": "5191297582a615969c000002",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000002",
+            "_slugs": ["asia"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Asia",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}]

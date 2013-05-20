@@ -16,7 +16,7 @@ gem 'versionist'
 gem 'mongoid', '~>3.0.16'
 
 # Use mongoid-rspec to get mongoid matchers in RSpec http://goo.gl/S64IW
-gem 'mongoid-rspec'
+# gem "mongoid-rspec", :git => "git://github.com/durran/mongoid-rspec.git"
 
 # Slugging for Mongoid documents
 gem 'mongoid_slug'

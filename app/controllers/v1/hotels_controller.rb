@@ -41,9 +41,10 @@ class V1::HotelsController < V1::BaseController
   # PATCH/PUT /hotels/1
   # PATCH/PUT /hotels/1.json
   def update
-    @hotel = Hotel.find(params[:id])
+    hotel_name = params[:hotel]["name"]
+    @hotel = Hotel.where(name: hotel_name).first
 
-    if @hotel.update_attributes(params[:hotel])
+    if @hotel.update_attributes!(params[:hotel])
       head :no_content
     else
       render json: @hotel.errors, status: :unprocessable_entity

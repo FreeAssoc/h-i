@@ -1,52 +1,24 @@
-Connecting to database specified by database.yml
-Connecting to database specified by database.yml
-  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
-  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "hotels"
-  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "hotels" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-04-05 21:35:19', '2013-04-05 21:35:19', 980190962)[0m
-  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "hotels" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-04-05 21:35:19', '2013-04-05 21:35:19', 298486374)
-  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
-  [1m[35m (0.3ms)[0m  begin transaction
-  [1m[36mHotel Load (0.2ms)[0m  [1mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1[0m  [["id", 980190962]]
-  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "hotels" 
-Processing by HotelsController#create as HTML
-  Parameters: {"hotel"=>{"name"=>"MyString"}}
-  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
-  [1m[35mSQL (2.0ms)[0m  INSERT INTO "hotels" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Fri, 05 Apr 2013 21:35:19 UTC +00:00], ["name", "MyString"], ["updated_at", Fri, 05 Apr 2013 21:35:19 UTC +00:00]]
-  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
-Completed 201 Created in 5ms (Views: 0.9ms | ActiveRecord: 2.1ms)
-  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "hotels" 
-  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
-  [1m[35m (0.0ms)[0m  begin transaction
-  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1[0m  [["id", 980190962]]
-  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "hotels" 
-Processing by HotelsController#destroy as HTML
-  Parameters: {"id"=>"980190962"}
-  [1m[36mHotel Load (0.0ms)[0m  [1mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
-  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
-  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "hotels" WHERE "hotels"."id" = ?[0m  [["id", 980190962]]
-  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
-Completed 204 No Content in 1ms (ActiveRecord: 0.2ms)
-  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "hotels" [0m
-  [1m[35m (0.3ms)[0m  rollback transaction
-  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
-  [1m[35mHotel Load (0.0ms)[0m  SELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1  [["id", 980190962]]
-Processing by HotelsController#index as HTML
-  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT "hotels".* FROM "hotels" [0m
-Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.1ms)
-  [1m[35m (0.0ms)[0m  rollback transaction
-  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
-  [1m[35mHotel Load (0.1ms)[0m  SELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1  [["id", 980190962]]
-Processing by HotelsController#show as HTML
-  Parameters: {"id"=>"980190962"}
-  [1m[36mHotel Load (0.0ms)[0m  [1mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
-Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
-  [1m[35m (0.1ms)[0m  rollback transaction
-  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
-  [1m[35mHotel Load (0.0ms)[0m  SELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1  [["id", 980190962]]
-Processing by HotelsController#update as HTML
-  Parameters: {"hotel"=>{"name"=>"MyString"}, "id"=>"980190962"}
-  [1m[36mHotel Load (0.0ms)[0m  [1mSELECT "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
-  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
-  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
-Completed 204 No Content in 1ms (ActiveRecord: 0.1ms)
-  [1m[35m (0.0ms)[0m  rollback transaction
+Started GET "/hotels/berns-hotel" for 127.0.0.1 at 2013-05-20 11:06:27 -0700
+Processing by V1::HotelsController#show as JSON
+  Parameters: {"id"=>"berns-hotel"}
+Completed 200 OK in 5ms (Views: 0.1ms)
+Started PUT "/hotels/berns-hotel" for 127.0.0.1 at 2013-05-20 11:06:27 -0700
+Processing by V1::HotelsController#update as JSON
+  Parameters: {"{\"hotel\":{\"name\":\"Berns Hotel\",\"booking_conditions\":\"My Test Update - Berns Hotel is not bookable at present\"}}"=>nil, "id"=>"berns-hotel"}
+Completed 500 Internal Server Error in 0ms
+Started GET "/hotels/berns-hotel" for 127.0.0.1 at 2013-05-20 11:17:45 -0700
+Processing by V1::HotelsController#show as JSON
+  Parameters: {"id"=>"berns-hotel"}
+Completed 200 OK in 5ms (Views: 0.1ms)
+Started PUT "/hotels/berns-hotel" for 127.0.0.1 at 2013-05-20 11:17:45 -0700
+Processing by V1::HotelsController#update as JSON
+  Parameters: {"{\"hotel\":{\"name\":\"Berns Hotel\",\"booking_conditions\":\"My Test Update - Berns Hotel is not bookable at present\"}}"=>nil, "id"=>"berns-hotel"}
+Completed 500 Internal Server Error in 0ms
+Started GET "/hotels/berns-hotel" for 127.0.0.1 at 2013-05-20 11:19:00 -0700
+Processing by V1::HotelsController#show as JSON
+  Parameters: {"id"=>"berns-hotel"}
+Completed 200 OK in 5ms (Views: 0.1ms)
+Started PUT "/hotels/berns-hotel" for 127.0.0.1 at 2013-05-20 11:19:00 -0700
+Processing by V1::HotelsController#update as JSON
+  Parameters: {"hotel"=>{"name"=>"Berns Hotel", "booking_conditions"=>"My Test Update - Berns Hotel is not bookable at present"}, "id"=>"berns-hotel"}
+Completed 204 No Content in 3ms

@@ -5,8 +5,9 @@ class User
 
   field :name, type: String
   field :email, type: String
+  field :validated, type: Boolean, default: false
+  field :validation_date, type: Date
 
-  has_many :walkthroughs
 
-  slug :name
+  slug :email
 end

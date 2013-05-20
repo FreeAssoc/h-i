@@ -115,6 +115,7 @@ module DataHelper
     room.rates = { "Visa Premium Card Rate" => 400, "Flexible rate" => 450, "Flexible rate + breakfast" => 475 }
     rooms << room
     hotel.rooms = rooms
+    hotel.booking_conditions = "N/A"
     hotel.save
 
     # hotel Grand du Cap Ferrat
@@ -421,16 +422,17 @@ RSpec.configure do |config|
   config.order = "random"
 
   config.before(:suite) do
-    DatabaseCleaner[:mongoid].strategy = :truncation
-    DatabaseCleaner[:mongoid].clean_with(:truncation)
+    DatabaseCleaner[:mongoid, { :connection => :hotelinsider_api_test} ].strategy = :truncation
+    DatabaseCleaner[:mongoid, { :connection => :hotelinsider_api_test} ].clean_with(:truncation)
+    # Mongoid.logger = Logger.new($stdout)
   end
 
   config.before(:each) do
-    DatabaseCleaner[:mongoid].start
+    DatabaseCleaner[:mongoid, { :connection => :hotelinsider_api_test} ].start
   end
 
   config.after(:each) do
-    DatabaseCleaner[:mongoid].clean
+    DatabaseCleaner[:mongoid, { :connection => :hotelinsider_api_test} ].clean
   end
 
   include DataHelper

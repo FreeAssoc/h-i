@@ -1,0 +1,31 @@
+{
+    "name": "Edgewater Hotel",
+    "address1": "2411 Alaskan Way",
+    "city": "Seattle",
+    "state_province": "WA",
+   "contacts": [ {
+        "title": "Reservations",
+        "name": "Helga",
+        "email": "helga@edgewaterhotel.com",
+        "phone1": "2069999999",
+        "phone2": "2069999998"
+    }
+    ],
+    "country_id": "5191647a82a61555ef00000c",
+    "fax": "2061111112",
+    "homepage": "http://edgewaterhotel.com/",
+    "location": [ 47.6126769, -122.3528004 ],
+    "postal_code": "98121",
+    "primary_email": "frontoffice@edgewaterhotel.com",
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/berns_hotel_exterior_stockholm_sweden.jpg",
+    "primary_phone": "+46 (0)8 566 322 50",
+    "rooms": [{
+        "description": "Standard king. King bed. 250 sqft. Floor to ceiling windows with stunning views",
+        "name": "FISHERMANS FRIEND",
+        "rates": {
+            "Visa Premium Card Rate": 200,
+            "Flexible rate": 225,
+            "Flexible rate + breakfast": 210
+        }
+    } ]
+}

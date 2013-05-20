@@ -1,0 +1,83 @@
+{
+    "_id": "5191297582a615969c00000f",
+    "_slugs": ["berns-hotel"],
+    "address1": "Näckströmsgatan 8",
+    "address2": null,
+    "address3": null,
+    "address4": null,
+    "booking_conditions": null,
+    "cancellation_policy": null,
+    "city": null,
+    "contacts": [{
+        "name": "Hans-Göran Göransson-Hansson",
+        "email": "goran@berns.se"
+    }, {
+        "title": "General Manager",
+        "name": "Göran",
+        "email": "goran@berns.se",
+        "phone1": "123456789",
+        "phone2": "123456789"
+    }, {
+        "title": "Director of Sales and Marketing"
+    }, {
+        "title": "Reservation"
+    }, {
+        "title": "Concierge"
+    }],
+    "country_id": "5191297582a615969c00000a",
+    "created_at": "2013-05-13T17:57:09Z",
+    "description": null,
+    "fax": "08-112",
+    "homepage": "http://www.berns.se/",
+    "image_urls": null,
+    "location": [59.33249, 18.07341],
+    "name": "Berns Hotel",
+    "postal_code": "111 47",
+    "primary_email": "frontoffice@berns.se",
+    "primary_image_url": "http://hotelinsider.secure.exhost.se/uploads/hotel/berns_hotel_exterior_stockholm_sweden.jpg",
+    "primary_phone": "+46 (0)8 566 322 50",
+    "rooms": [{
+        "_id": "5191297582a615969c000010",
+        "created_at": null,
+        "description": "Standard king. King bed. 250 sqft. Floor to ceiling windows with stunning views",
+        "image_urls": null,
+        "name": "DELUXE KING ADA",
+        "rates": {
+            "Visa Premium Card Rate": 417,
+            "Flexible rate": 475,
+            "Flexible rate + breakfast": 510
+        },
+        "updated_at": null
+    }, {
+        "_id": "5191297582a615969c000011",
+        "created_at": null,
+        "description": "Standard king. King bed. 250 sqft.",
+        "image_urls": null,
+        "name": "DELUXE KING",
+        "rates": {
+            "Visa Premium Card Rate": 400,
+            "Flexible rate": 450,
+            "Flexible rate + breakfast": 475
+        },
+        "updated_at": null
+    }],
+    "state_province": null,
+    "updated_at": "2013-05-13T17:57:09Z",
+    "country": {
+        "_id": "5191297582a615969c00000a",
+        "_slugs": ["sweden"],
+        "created_at": "2013-05-13T17:57:09Z",
+        "currency": "SEK",
+        "iso_code": "SE",
+        "name": "Sweden",
+        "region_id": "5191297582a615969c000004",
+        "updated_at": "2013-05-13T17:57:09Z",
+        "region": {
+            "_id": "5191297582a615969c000004",
+            "_slugs": ["europe"],
+            "created_at": "2013-05-13T17:57:09Z",
+            "name": "Europe",
+            "updated_at": "2013-05-13T17:57:09Z"
+        }
+    }
+}
