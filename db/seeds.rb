@@ -4,6 +4,7 @@ Walkthrough.destroy_all
 Hotel.destroy_all
 Country.destroy_all
 Region.destroy_all
+User.destroy_all
 
 Region.create( { name: "Africa" } )
 Region.create( { name: "Asia" } )
@@ -333,6 +334,7 @@ hotel.save
 # Create a few users to test out email notifications and so forth.
 user = User.new
 user.email = "michael@freeassoc.net"
+user.notify_when_site_is_live = true
 user.save
 
 user = User.new
@@ -344,6 +346,4 @@ user.save
 
 user = User.new
 user.email = "eskabob@igloo.com"
-user.notify_when_site_is_live = true
 user.save
-
