@@ -14,12 +14,16 @@ class UserMailer < ActionMailer::Base
 
   # Send out a message to all users who want to be notified when the site goes live.
   def send_golive_message(users, app_name, site_name, site_url)
-    users = users
     @app_name = app_name
     @site_name = site_name
     @site_url = site_url
-    mail(:subject => "Site #{@site_name} is now live!", 
-          :to => users.all.map(&:email))
+    mail( 
+          :to => users.all.map(&:email),
+          :subject => "Our site #{@site_name} is now live!", 
+          :body => "See it here: http://hotelinsider.com"
+          # :template_path => "mailers",
+          # :template_name => "golive"
+        )
 
   end
 

@@ -61,25 +61,25 @@ class V1::UsersController < V1::BaseController
   # Notify all users who requested notification that the site is live
   def golive_notify
     if params[:app_name]
-      app_name = params[:app_name]
+      @app_name = params[:app_name]
     else
-      app_name = "Hotel Insider"
+      @app_name = "Hotel Insider"
     end
 
     if params[:site_name]
-      site_name = params[:site_name]
+      @site_name = params[:site_name]
     else
-      site_name = "Hotel Insider"
+      @site_name = "Hotel Insider"
     end
 
     if params[:site_url]
-      site_url = params[:site_url]
+      @site_url = params[:site_url]
     else
-      site_url = "http://hotelinsider.com"
+      @site_url = "http://hotelinsider.com"
     end
 
-    users = User.where(notify_when_site_is_live: true)
-    UserMailer.send_golive_message(users, app_name, site_name, site_url).deliver
+    @users = User.where(notify_when_site_is_live: true)
+    UserMailer.send_golive_message(@users, @app_name, @site_name, @site_url).deliver
     render json: { status => "Notification sent." }
 
   end
