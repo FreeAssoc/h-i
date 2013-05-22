@@ -28,7 +28,17 @@ HotelinsiderApi::Application.configure do
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
-
+  # ActionMailer Config
+  config.action_mailer.default_url_options = { :host => 'hotelinsider.com' }
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "app14714243@heroku.com",
+    :password  => "i2or1I_INNrrokgEa750LQ", # SMTP password is any valid API key
+    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :domain => 'hotelinsider.com', # your domain to identify your server when connecting
+  }
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr

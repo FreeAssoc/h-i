@@ -1,8 +1,8 @@
 HotelinsiderApi::Application.routes.draw do
 
-  resources :users, except: [:new, :edit]
-
   api_version(:module => "V1", :parameter => {:name => "version", :value => "1"}, :defaults => {:format => "json"}, :default => true) do
+
+    match '/users/golive_notify' => 'users#golive_notify'
 
     resources :hotels, except: [:new, :edit] do
       resources :rooms, except: [:new, :edit]
@@ -14,6 +14,7 @@ HotelinsiderApi::Application.routes.draw do
     resources :sites, except: [:new, :edit]
     resources :countries, except: [:new, :edit]
     resources :regions, except: [:new, :edit]
-  end
+    resources :users, except: [:new, :edit]
+ end
 
 end

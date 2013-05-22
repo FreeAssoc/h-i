@@ -7,7 +7,8 @@ class User
   field :email, type: String
   field :validated, type: Boolean, default: false
   field :validation_date, type: Date
-
-
+  field :notify_when_site_is_live, type: Boolean, default: false
+  field :newsletter_subscriber, type: Boolean, default: false
+ 
   slug :email
 end

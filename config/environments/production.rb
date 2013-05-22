@@ -19,6 +19,21 @@ HotelinsiderApi::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+ # ActionMailer Config
+  # Setup for production - deliveries, no errors raised
+  config.action_mailer.default_url_options = { :host => 'hotelinsider.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
+
+  config.action_mailer.smtp_settings = {
+    address: "smtp.mandrillapp.com",
+    port: 587,
+    domain: "hotelinsider.com",
+    user_name: "app14714243@heroku.com",
+    password: "i2or1I_INNrrokgEa750LQ"
+  }
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH

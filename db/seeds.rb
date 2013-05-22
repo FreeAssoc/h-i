@@ -329,3 +329,21 @@ room.rates = { "Visa Premium Card Rate" => 100, "Summer weekend rate" => 200, "G
 rooms << room
 hotel.rooms = rooms
 hotel.save
+
+# Create a few users to test out email notifications and so forth.
+user = User.new
+user.email = "michael@freeassoc.net"
+user.save
+
+user = User.new
+user.email = "paul@hotelinsider.com"
+user.notify_when_site_is_live = true
+user.validated = true
+user.validation_date = DateTime.now
+user.save
+
+user = User.new
+user.email = "eskabob@igloo.com"
+user.notify_when_site_is_live = true
+user.save
+
