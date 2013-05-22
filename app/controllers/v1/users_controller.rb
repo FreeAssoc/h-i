@@ -40,7 +40,7 @@ class V1::UsersController < V1::BaseController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-    @user = User.where(email: params[:id])
+    @user = User.find(params[:id])
 
     if @user.update_attributes(params[:user])
       head :no_content
