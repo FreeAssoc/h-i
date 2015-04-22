@@ -24,7 +24,6 @@ class UserMailer < ActionMailer::Base
           # :template_path => "mailers",
           # :template_name => "golive"
         )
-
   end
 
   # Send the current newsletter to all subscribers
